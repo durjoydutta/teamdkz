@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
+:root {
+    --primary-color:#b6fc03;
+}
+
+body {
+    overflow-x:  hidden;
+    margin: 0px;
+    padding: 0;    
+    background-image: linear-gradient(to bottom, rgba(27, 8, 42, 0.911)), url(../images/hypebeast.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'poppins';
+    font-size: 1.2em;
+    font-weight: 800;
+
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.787)), url(../images/mobile_background.jpg);
+        background-position-y: 5em;
+    
+    }             
+}
+
+
+.navbar {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    width: 100%;
+    height: 4em;
+    background:#2e0568;
+    background-blend-mode:darken;
+    box-shadow: 0px 2px 5px rgb(49, 187, 102);
+    font-weight: bolder;
+    padding: 25px;
+    margin: 0;
+    border-style:hidden ;
+    border-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    img.dkz_logo {
+        position:sticky;
+        display: flex;
+        float: left;
+        width: 70px;
+        border-radius: 15px;
+        margin: auto;
+        padding: .2em;
+        padding-bottom: 0;
+        box-shadow: 5x 5x 10px red;
+        transition: all 0.5s ease;
+        animation:both;
+        animation-duration: 1s;
+        animation-delay: .5s;
+    }
+        img.dkz_logo:hover {
+                border-radius: 1.5em;
+        } 
+
+        @media only screen and (max-width: 1000px) {
+            img.dkz_logo {
+                width: 3em;
+                margin-top: 0em;
+                margin-left: 0em;
+                padding: .2em;
+            }
+            
+        }
+
+    .teamdkz {
+        //background: rgb(23, 17, 41);
+        text-shadow: 5px 10px 5px #000000;
+        color: var(--primary-color);
+        top: 10%;
+        display: inline-flex;
+        float: left;
+        border-radius: .1em;
+        padding: 10px;
+        margin: auto;
+        transition: all 0.5s ease;
+        animation:both;
+        animation-duration: 1s;
+        animation-delay: .5s;
+    }
+            .teamdkz:hover {
+                color: white;
+                background-color: rgba(4, 43, 105, 0.972) ;
+                border-radius: 2em;
+                box-shadow: 5px 5px var(--primary-color);
+
+            }  
+            
+            @media  screen and (min-width: '1430px') {.teamdkz {transform: translateY(5px);}
+        }
+
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+    nav {
+        visibility: hidden;
+        position: fixed;
+        z-index: 999;
+        width: 40%;
+        height: 50%;
+        right: 0;
+        top: 0;
+        background: rgba(179, 255, 0, 0.972);
+        box-shadow: 10px 10px rgb(49, 187, 102);
+        border-radius: .2em;
+        line-height: 2em;
+        padding: 0.3em;
+        margin-right: .5em;
+
+        img.exit {
+            float: right;
+            color: white;
+            z-index: 9999;
+            display: block;
+            margin: 0.5em 0.5em 0 0;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+    .primary {
+        margin-top: 5em;
+        margin-left: 1.5em;
+        display: block;
+        padding: .5em;
+        font-size: 20px;
+        text-align: right;
+        line-height: 2.2em;
+    }
+
+    .secondary {
+        margin-top: 0;
+        margin-bottom: 1.5em;
+        display: block;
+        padding: .5em;
+        font-size: 20px;
+        text-align: right;
+        line-height: 2.5em;
+    }
+
+}
+
+}
+
+nav.menu-btn {display: block;}
+
+.menu {       
+    display: flex;
+    float: right;
+    color: black;
+    padding: 0px;
+    cursor: pointer;
+    margin: 0em 3em 1.5em 0;
+      
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section {
+    margin: 0px;
+    padding: 3em 1em;
+}
+
+
+
+.hero {
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 4.5em;
+    padding: 30px;
+
+
+
+    p.intro {
+        color: rgba(245, 245, 245, 0.897);
+        text-shadow: 2px 0.5px 10px #6f00ff;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 800;
+        font-size: 50px;
+
+            .cursivedkz {
+            font-family: 'ephesis', cursive;
+            color: rgb(240, 87, 27);
+            margin: 10px;
+            font-size: 50px;
+            text-shadow: 2px 2px 10px #ad02f1;
+            transition: all 0.5s ease;
+            animation:both;
+            animation-duration: 1s;
+            animation-delay: .5s;
+            }
+
+            .cursivedkz:hover {
+                cursor: pointer;
+                color: chartreuse;;
+
+            }
+    }        
+
+            .future {
+                
+                color: var(--primary-color);
+                
+                //background: radial-gradient(rgba(87, 187, 100, 0.37), rgba(200, 200, 205, 0.1));
+                text-transform: uppercase;
+                text-shadow: 10px 0.5px 10px #34a71a83;
+                margin-left: 1.5em ;
+                margin-right: 1.5em;
+                font-family: 'audiowide';
+                font-weight: 1000;
+                font-size: 50px;
+                transition: all 0.5s ease;
+                animation:both;
+                animation-duration: 1s;
+                animation-delay: .5s;
+            }
+
+                .future:hover {
+                    cursor: grab;
+                    color: rgba(95, 18, 184, 0.993);
+                    text-shadow: 10px 0.5px 10px #ffffff;
+                    //background: rgba(22, 22, 21, 0.397);
+                    border-radius: 1em;
+                }
+        
+
+    .tagline {
+        text-transform: uppercase;
+        background-size: 10px;
+        padding: 10px;
+        border-color: white;
+        color: var(--primary-color);
+        background: rgba(172, 162, 162, 0.219);
+        border-radius: 3em;
+        transition: all 0.5s ease;
+            
+        }
+
+        .tagline:hover {
+            cursor: crosshair;
+            color: rgba(27, 25, 25, 0.924);
+            background: rgba(246, 246, 243, 0.842);
+            
+        }
+              
+    
+}
+
+.illustrations {
+    color: var(--primary-color);
+    ul {display: inline-flexbox;}
+    width: 100%;
+    margin: 5em 1em 0em 4em;
+
+    .game-icon {color: var(--primary-color);
+        transition: all 0.5s ease;
+        animation-name: example;
+        animation-duration: 10s}
+    
+
+
+ .console {
+     text-align: center;
+     padding-right: 15px;
+     margin-right: .5em;
+     margin-left: 0em;    
+ }
+
+ .pc {
+     text-align: center;
+     margin-top: -5em;
+     margin-left: -5em ;
+     margin-right: 20em;     
+     }
+
+}
+
+.game-icon:hover {
+    color: rgba(255, 255, 255, 0.924);
+
+}
+
+
+.channel-link{
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+   // background: rgba(172, 162, 162, 0.219);
+    border-radius: 10em;
+    text-align: center;
+    padding: 10px;
+    margin: 50px;
+    width: unset;
+
+    .youtubechannel {
+        color: var(--primary-color);
+        
+        text-shadow: 2px 2px 10px #73ff00;
+        transition: all 0.5s ease;
+        border-radius: 1em;
+    }
+
+    .youtubechannel:hover {
+        color: rgba(27, 25, 25, 0.924);
+        background: rgba(246, 246, 243, 0.842);
+        box-shadow: none;
+    }
+
+}    
+
+/*This is how to make embed Youtube video responsive */
+.video-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;    
+  }
+  .video-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+/*This is how to make embed Youtube video responsive */
+iframe.youtubevideo {
+    border-radius: 1.5em;
+}
+
+
+.testimonials {
+
+    img.person {
+        width: 80px;
+        border-radius: .5em;
+        margin: 10px;
+        opacity: 0.8;
+        transition: all 0.5s ease;
+        animation-duration: 1s;
+    }
+    
+        img.person:hover {
+            width: 90px;
+        }
+
+
+
+
+    padding: 2em;
+    line-height: 0em;
+    
+
+        li {
+            color: var(--primary-color);
+            background-image: linear-gradient(to bottom, rgba(33, 21, 44, 0.459)), url(../images/peripherals.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            text-rendering: optimizeLegibility;
+            text-align: center;
+            border-radius: 3em;
+            padding: 2em 1em;
+            margin: 0 3.5em 5em 2em;
+        }
+
+
+    cite.quotenames {
+        text-transform: uppercase;
+        text-shadow: 2px 2px 10px #73ff00
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .testimonials {
+        display: flexbox;
+        flex-wrap: nowrap;
+        height: 400px;
+        overflow-x: auto;
+        overflow-y: none;
+        width: auto
+    }
+  }
+
+
+
+blockquote {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.twitterfeeds {
+    margin: 1em;
+    display: inline-flex;
+    padding: 3em;
+}
+
+
+
+.contact_map {
+        color: var(--primary-color);
+        background-image: linear-gradient(rgba(24, 20, 20, 0.746)), url(../images/pc_cabinet.jpeg);
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 0 3em 0em 3em;
+        padding: 3em;
+        border-radius: 1em;
+
+        label {
+            display: block;
+            font-size: 1.1em;
+            font-weight: 300;
+            margin-bottom: .5em;           
+        }
+
+        select, input, textarea {
+            width: 100%;
+            padding: .8em;
+            margin: 1em 3em 1em 0;
+            box-sizing: border-box;
+            border-radius: .4em;
+            border-radius: 1px solid gray;
+        }
+
+        .send_message {
+            background-color: var(--primary-color);
+            color: rgb(34, 8, 8);
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+            padding: 1em;
+            border-radius: 2em;
+            margin: 1em;
+            width: unset;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            animation:both;
+            animation-duration: 1s;
+            animation-delay: .5s;
+
+            &:hover {font-size: large;
+        text-align: center;}
+
+        }
+  
+}
+
+.googlemap {
+    height: 300px ;
+    width: 100%;
+    margin-bottom: 0px;
+    border-radius: 1em;
+} 
+
+h2 {
+    text-shadow: 2px 2px 5px #73ff00;
+}
+
+
+
+#myBtn {
+    display: hidden; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--primary-color);/* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 30px; /* Rounded corners */
+    font-size: 20px; /* Increase font size */
+    font-weight: bold;
+    transition: all 0.5s ease;
+  }
+  
+  .uparrow {
+      width: 35px;
+      height: 35px;
+  }
+  #myBtn:hover {
+    background-color: rgb(255, 255, 255);
+  }
+
+
+.bottompage {
+    float: center;
+    color: var(--primary-color);
+    margin: 5em 1.5em 1em 1.5em;
+    border-radius: 1em;
+    background-image: linear-gradient(rgba(90, 81, 81, 0.205)), url(../images/gaming_background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+}
+
+.followus {
+    margin-top: -5em;
+    display: inline flex;
+    text-align: center;
+}
+
+
+.fa {
+    position: relative;
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+.fa-facebook {
+    background: #3B5998 ;
+    color: white;
+    transition: all 0.3s ease;
+    animation:both;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-direction: normal;
+
+    &:hover {font-size: xx-large;
+    width: 30px;}
+}
+.fa-instagram {
+    background: #125688 ;
+    color: white;
+    transition: all 0.3s ease;
+    animation:both;
+    animation-duration: 1s;
+    animation-delay: .5s;
+
+    &:hover {font-size: xx-large;width: 30px;}
+}
+.fa-twitter {
+    background: #55ACEE;
+    color : white;
+    transition: all 0.3s ease;
+    animation:both;
+    animation-duration: 1s;
+    animation-delay: .5s;
+
+    &:hover {font-size: xx-large;width: 30px;}
+}
+.fa-youtube {
+    background: red;
+    color: white;
+    transition: all 0.3s ease;
+    animation:both;
+    animation-duration: 1s;
+    animation-delay: .5s;
+
+    &:hover {font-size: xx-large;width: 30px;}
+}
+
+.mb-5 {
+    display: inline-flex;
+    padding: 0.2em;
+    margin-left: .3em;
+}
+
+
+
+
+.bottomlists {
+    display: inline;
+    .bottomlist_primary {
+        text-align: left;
+        margin-left: -1em;
+
+
+    }
+
+    .bottomlist_secondary {
+        text-align: right;
+        margin: -8.5em 0em 0 12em ;
+
+    }
+}
+
+
+
+.smallbranding {
+    align-self: auto;
+    opacity: 1;
+    color: rgb(233, 227, 227);
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 30px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    white-space: normal;
+  }
+  /*# sourceMappingURL=main.css.map */
+
+
+  ///////Media Queries/////////
+
+@media only screen and (min-width: '800px') {
+            .menu, .exit {visibility: hidden;}
+
+            h1.teamdkz {
+              transform: translateY(-30px);
+              padding: 1em;
+            }
+            
+            .navbar {
+                height: 5em;
+            }
+
+            .navbar .container {
+                display: inline-flexbox;
+                grid-template-columns: 180px auto;
+                justify-content: unset;
+                padding: 0;
+                }
+                .navbar nav {
+                    visibility: visible;
+                    display: inline-flexbox;
+                    float: left;
+                    text-align: left;
+                    //justify-content: unset;
+                    position: unset;
+                    width: 1000px;
+                    height: unset;
+                    line-height: unset;
+                    background: none;
+                    box-shadow: none;
+                    margin-top: -5em;
+                    
+
+
+
+                }
+
+              nav ul li a {
+                    color: #ffffff;
+                    position: unset; 
+                    float: left;
+                    padding: .3em;
+                    line-height: 1.2em;
+                    margin-left: 1em;
+                    margin-bottom: 1em;
+                    transition: all 0.5s ease;    
+                    animation:both;
+                    animation-duration: 1s;
+                    animation-delay: .5s;
+                    
+                    &:hover {
+                        border-radius: 0.2em;
+                        box-shadow: 0 0 5px var(--primary-color);
+                    }
+                                        
+                }
+                nav ul {
+                    margin: unset;
+                    position: relative;
+                    display: inline-flexbox;
+                    flex-wrap: nowrap;
+                    
+                    
+                }
+                nav ul li {float: left;
+                    
+                    padding: 0 5px 5px 5px;
+                    //box-shadow: 0 0 5px var(--primary-color);
+  
+                    
+                
+                }
+
+                nav ul.primary {
+                    font-weight: 80;
+                    font-size: 5px;
+                    margin-top: 0em;
+                    transform: translateX(0em);
+                    transform: translateY(0em);
+                }
+
+                nav ul.secondary {
+                    font-weight: 80;
+                    font-size: 5px;
+                    margin-top: 0em;
+                    transform: translateX(0em);
+                    transform: translateY(-1em);
+                    padding: .2em;
+                    
+                }
+
+              .navbar .container  .teamdkz {
+                    background: none;
+                    box-shadow: none;
+                }
+            
+
+        }
+
+
+
+
+
+
+
+
