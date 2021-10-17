@@ -1,0 +1,778 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color:#b6fc03;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 8, 42, 0.911))), url(../images/hypebeast.jpg);
+  background-image: linear-gradient(to bottom, rgba(27, 8, 42, 0.911)), url(../images/hypebeast.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'poppins';
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.787))), url(../images/mobile_background.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.787)), url(../images/mobile_background.jpg);
+    background-position-y: 5em;
+  }
+}
+
+.navbar {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  height: 4em;
+  background: #2e0568;
+  background-blend-mode: darken;
+  -webkit-box-shadow: 0px 2px 5px #31bb66;
+          box-shadow: 0px 2px 5px #31bb66;
+  font-weight: bolder;
+  padding: 25px;
+  margin: 0;
+  border-style: hidden;
+  border-color: white;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.navbar img.dkz_logo {
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  width: 70px;
+  border-radius: 15px;
+  margin: auto;
+  padding: .2em;
+  padding-bottom: 0;
+  -webkit-box-shadow: 5x 5x 10px red;
+          box-shadow: 5x 5x 10px red;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: both;
+          animation: both;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.navbar img.dkz_logo:hover {
+  border-radius: 1.5em;
+}
+
+@media only screen and (max-width: 1000px) {
+  .navbar img.dkz_logo {
+    width: 3em;
+    margin-top: 0em;
+    margin-left: 0em;
+    padding: .2em;
+  }
+}
+
+.navbar .teamdkz {
+  text-shadow: 5px 10px 5px #000000;
+  color: var(--primary-color);
+  top: 10%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  float: left;
+  border-radius: .1em;
+  padding: 10px;
+  margin: auto;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: both;
+          animation: both;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.navbar .teamdkz:hover {
+  color: white;
+  background-color: rgba(4, 43, 105, 0.972);
+  border-radius: 2em;
+  -webkit-box-shadow: 5px 5px var(--primary-color);
+          box-shadow: 5px 5px var(--primary-color);
+}
+
+@media screen and (min-width: 1430px) {
+  .navbar .teamdkz {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar nav {
+  visibility: hidden;
+  position: fixed;
+  z-index: 999;
+  width: 40%;
+  height: 50%;
+  right: 0;
+  top: 0;
+  background: rgba(179, 255, 0, 0.972);
+  -webkit-box-shadow: 10px 10px #31bb66;
+          box-shadow: 10px 10px #31bb66;
+  border-radius: .2em;
+  line-height: 2em;
+  padding: 0.3em;
+  margin-right: .5em;
+}
+
+.navbar nav img.exit {
+  float: right;
+  color: white;
+  z-index: 9999;
+  display: block;
+  margin: 0.5em 0.5em 0 0;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.navbar nav .primary {
+  margin-top: 5em;
+  margin-left: 1.5em;
+  display: block;
+  padding: .5em;
+  font-size: 20px;
+  text-align: right;
+  line-height: 2.2em;
+}
+
+.navbar nav .secondary {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  display: block;
+  padding: .5em;
+  font-size: 20px;
+  text-align: right;
+  line-height: 2.5em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  color: black;
+  padding: 0px;
+  cursor: pointer;
+  margin: 0em 3em 1.5em 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+section {
+  margin: 0px;
+  padding: 3em 1em;
+}
+
+.hero {
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 4.5em;
+  padding: 30px;
+}
+
+.hero p.intro {
+  color: rgba(245, 245, 245, 0.897);
+  text-shadow: 2px 0.5px 10px #6f00ff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.hero p.intro .cursivedkz {
+  font-family: 'ephesis', cursive;
+  color: #f0571b;
+  margin: 10px;
+  font-size: 50px;
+  text-shadow: 2px 2px 10px #ad02f1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: both;
+          animation: both;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.hero p.intro .cursivedkz:hover {
+  cursor: pointer;
+  color: chartreuse;
+}
+
+.hero .future {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  text-shadow: 10px 0.5px 10px #34a71a83;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  font-family: 'audiowide';
+  font-weight: 1000;
+  font-size: 50px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: both;
+          animation: both;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.hero .future:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+  color: rgba(95, 18, 184, 0.993);
+  text-shadow: 10px 0.5px 10px #ffffff;
+  border-radius: 1em;
+}
+
+.hero .tagline {
+  text-transform: uppercase;
+  background-size: 10px;
+  padding: 10px;
+  border-color: white;
+  color: var(--primary-color);
+  background: rgba(172, 162, 162, 0.219);
+  border-radius: 3em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.hero .tagline:hover {
+  cursor: crosshair;
+  color: rgba(27, 25, 25, 0.924);
+  background: rgba(246, 246, 243, 0.842);
+}
+
+.illustrations {
+  color: var(--primary-color);
+  width: 100%;
+  margin: 5em 1em 0em 4em;
+}
+
+.illustrations ul {
+  display: inline-flexbox;
+}
+
+.illustrations .game-icon {
+  color: var(--primary-color);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.illustrations .console {
+  text-align: center;
+  padding-right: 15px;
+  margin-right: .5em;
+  margin-left: 0em;
+}
+
+.illustrations .pc {
+  text-align: center;
+  margin-top: -5em;
+  margin-left: -5em;
+  margin-right: 20em;
+}
+
+.game-icon:hover {
+  color: rgba(255, 255, 255, 0.924);
+}
+
+.channel-link {
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  border-radius: 10em;
+  text-align: center;
+  padding: 10px;
+  margin: 50px;
+  width: unset;
+}
+
+.channel-link .youtubechannel {
+  color: var(--primary-color);
+  text-shadow: 2px 2px 10px #73ff00;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 1em;
+}
+
+.channel-link .youtubechannel:hover {
+  color: rgba(27, 25, 25, 0.924);
+  background: rgba(246, 246, 243, 0.842);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*This is how to make embed Youtube video responsive */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*This is how to make embed Youtube video responsive */
+iframe.youtubevideo {
+  border-radius: 1.5em;
+}
+
+.testimonials {
+  padding: 2em;
+  line-height: 0em;
+}
+
+.testimonials img.person {
+  width: 80px;
+  border-radius: .5em;
+  margin: 10px;
+  opacity: 0.8;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.testimonials img.person:hover {
+  width: 90px;
+}
+
+.testimonials li {
+  color: var(--primary-color);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 21, 44, 0.459))), url(../images/peripherals.jpg);
+  background-image: linear-gradient(to bottom, rgba(33, 21, 44, 0.459)), url(../images/peripherals.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+  border-radius: 3em;
+  padding: 2em 1em;
+  margin: 0 3.5em 5em 2em;
+}
+
+.testimonials cite.quotenames {
+  text-transform: uppercase;
+  text-shadow: 2px 2px 10px #73ff00;
+}
+
+@media (max-width: 992px) {
+  .testimonials {
+    display: flexbox;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: 400px;
+    overflow-x: auto;
+    overflow-y: none;
+    width: auto;
+  }
+}
+
+blockquote {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.twitterfeeds {
+  margin: 1em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 3em;
+}
+
+.contact_map {
+  color: var(--primary-color);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 20, 20, 0.746))), url(../images/pc_cabinet.jpeg);
+  background-image: linear-gradient(rgba(24, 20, 20, 0.746)), url(../images/pc_cabinet.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0 3em 0em 3em;
+  padding: 3em;
+  border-radius: 1em;
+}
+
+.contact_map label {
+  display: block;
+  font-size: 1.1em;
+  font-weight: 300;
+  margin-bottom: .5em;
+}
+
+.contact_map select, .contact_map input, .contact_map textarea {
+  width: 100%;
+  padding: .8em;
+  margin: 1em 3em 1em 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: .4em;
+  border-radius: 1px solid gray;
+}
+
+.contact_map .send_message {
+  background-color: var(--primary-color);
+  color: #220808;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em;
+  border-radius: 2em;
+  margin: 1em;
+  width: unset;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: both;
+          animation: both;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.contact_map .send_message:hover {
+  font-size: large;
+  text-align: center;
+}
+
+.googlemap {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 0px;
+  border-radius: 1em;
+}
+
+h2 {
+  text-shadow: 2px 2px 5px #73ff00;
+}
+
+#myBtn {
+  display: hidden;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: var(--primary-color);
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 30px;
+  /* Rounded corners */
+  font-size: 20px;
+  /* Increase font size */
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.uparrow {
+  width: 35px;
+  height: 35px;
+}
+
+#myBtn:hover {
+  background-color: white;
+}
+
+.bottompage {
+  float: center;
+  color: var(--primary-color);
+  margin: 5em 1.5em 1em 1.5em;
+  border-radius: 1em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(90, 81, 81, 0.205))), url(../images/gaming_background.jpg);
+  background-image: linear-gradient(rgba(90, 81, 81, 0.205)), url(../images/gaming_background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left;
+}
+
+.followus {
+  margin-top: -5em;
+  display: inline flex;
+  text-align: center;
+}
+
+.fa {
+  position: relative;
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-animation: both;
+          animation: both;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+.fa-facebook:hover {
+  font-size: xx-large;
+  width: 30px;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-animation: both;
+          animation: both;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.fa-instagram:hover {
+  font-size: xx-large;
+  width: 30px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-animation: both;
+          animation: both;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.fa-twitter:hover {
+  font-size: xx-large;
+  width: 30px;
+}
+
+.fa-youtube {
+  background: red;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-animation: both;
+          animation: both;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.fa-youtube:hover {
+  font-size: xx-large;
+  width: 30px;
+}
+
+.mb-5 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0.2em;
+  margin-left: .3em;
+}
+
+.bottomlists {
+  display: inline;
+}
+
+.bottomlists .bottomlist_primary {
+  text-align: left;
+  margin-left: -1em;
+}
+
+.bottomlists .bottomlist_secondary {
+  text-align: right;
+  margin: -8.5em 0em 0 12em;
+}
+
+.smallbranding {
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+  opacity: 1;
+  color: #e9e3e3;
+  font-size: 12px;
+  line-height: 15px;
+  padding-top: 30px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  white-space: normal;
+}
+@media only screen and (min-width: 800px) {
+  .menu, .exit {
+    visibility: hidden;
+  }
+  h1.teamdkz {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+    padding: 1em;
+  }
+  .navbar {
+    height: 5em;
+  }
+  .navbar .container {
+    display: inline-flexbox;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    padding: 0;
+  }
+  .navbar nav {
+    visibility: visible;
+    display: inline-flexbox;
+    float: left;
+    text-align: left;
+    position: unset;
+    width: 1000px;
+    height: unset;
+    line-height: unset;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-top: -5em;
+  }
+  nav ul li a {
+    color: #ffffff;
+    position: unset;
+    float: left;
+    padding: .3em;
+    line-height: 1.2em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-animation: both;
+            animation: both;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  nav ul li a:hover {
+    border-radius: 0.2em;
+    -webkit-box-shadow: 0 0 5px var(--primary-color);
+            box-shadow: 0 0 5px var(--primary-color);
+  }
+  nav ul {
+    margin: unset;
+    position: relative;
+    display: inline-flexbox;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  nav ul li {
+    float: left;
+    padding: 0 5px 5px 5px;
+  }
+  nav ul.primary {
+    font-weight: 80;
+    font-size: 5px;
+    margin-top: 0em;
+    -webkit-transform: translateX(0em);
+            transform: translateX(0em);
+    -webkit-transform: translateY(0em);
+            transform: translateY(0em);
+  }
+  nav ul.secondary {
+    font-weight: 80;
+    font-size: 5px;
+    margin-top: 0em;
+    -webkit-transform: translateX(0em);
+            transform: translateX(0em);
+    -webkit-transform: translateY(-1em);
+            transform: translateY(-1em);
+    padding: .2em;
+  }
+  .navbar .container .teamdkz {
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
