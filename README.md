@@ -1,2 +1,5 @@
 # teamdkz
-TeamDKZ offical website
+
+Official Website of TeamDKZ.
+
+#DKZisReady
