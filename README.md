@@ -1,5 +1,5 @@
-# teamdkz
+# TeamDKZ - Official Website
 
-Official Website of TeamDKZ.
+![teamdkz](./images/teamdkz-preview.png)
 
-#DKZisReady
+## Welcome - **DKZisReady!**👋
